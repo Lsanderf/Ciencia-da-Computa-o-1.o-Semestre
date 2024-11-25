@@ -1,0 +1,59 @@
+#include <stdio.h>
+#include <ctype.h>
+
+#define MAX 100 
+int TAM = 0; 
+
+typedef struct{
+    char nome[50];
+    int idade;
+} Pessoa;
+
+void cadastro(Pessoa pessoas[]);
+void listar(Pessoa pessoas[]);
+int Media(Pessoa pessoas[]);
+
+int main(){
+  Pessoa pessoas[MAX];
+  cadastro(pessoas);
+  listar(pessoas);
+  int media = Media(pessoas);
+  printf("\nA media de idaed da turma eh: %.2f", media);
+return 0;
+}
+
+void cadastro(Pessoa pessoas[]){
+  char again;
+  if(TAM > MAX){
+    printf("\nmaximo atingido\n");
+  }
+  else{
+    printf("Nome:\n");
+    fgets(pessoas[TAM].nome, 50, stdin);
+
+    printf("idade:\n");
+    scanf("%d", &pessoas[TAM].idade);
+    TAM++;
+    printf("Listar mais alguem?\n  (S OU N)\n");
+    scanf(" %c", &again);
+    again = toupper(again);
+    if( again = 'S'){
+      cadastro(pessoas);
+    }
+} 
+}
+
+void listar(Pessoa pessoas[]){
+  for(int i=0;i<TAM;i++){
+    printf("\n%d = %s\n",i+1, pessoas[i].nome);
+    printf("%d\n", pessoas[i].idade);
+  }
+}
+
+int Media(Pessoa pessoas[]){
+  int media = 0; 
+  for(int i = 0; i < TAM ; i++){
+    media += pessoas[i].idade;
+  }
+return media/TAM;
+}
