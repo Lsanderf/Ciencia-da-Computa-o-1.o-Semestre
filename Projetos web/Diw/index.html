@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Principal</title>
+  
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  
+  <!-- Estilo personalizado -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <style>
+    .navbar {
+      background-color: #0c8992; /* Cor da barra de navegação */
+    }
+    .card {
+      height: 100%; /* Garante que todos os cards tenham a mesma altura */
+    }
+  </style>
+</head>
+<body>
+  <!-- Cabeçalho com logo e menu -->
+  <header class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="index.html">PucFlix</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="explorar.html">Explorar</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Seção 1: Séries Populares -->
+  <div class="container mt-4">
+    <h2 class="text-gray">Séries Populares</h2>
+    <div id="carouselExample" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="strangerthings capa.jpg" class="d-block w-100" alt="Série 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Stranger Things</h5>
+                    <p>Um grupo de crianças enfrenta forças sobrenaturais e uma agência governamental em uma pequena cidade.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="dragon ball imagem.jpg" class="d-block w-100" alt="Série 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Dragon Ball Super</h5>
+                    <p>Dragon Ball Super é uma série de anime e mangá que continua a história de Dragon Ball Z, focando nas aventuras de Goku e seus amigos após a derrota de Majin Buu. A trama se desenrola em várias sagas.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="The-Crown-Capa.jpeg" class="d-block w-100" alt="Série 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>The Crown</h5>
+                    <p>A história do reinado da Rainha Elizabeth II e os eventos que moldaram a segunda metade do século XX.</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+        </a>
+    </div>
+  </div>
+
+  <!-- Seção 2: Cards de Séries Recentes -->
+  <section class="container mt-5">
+    <h2>Séries Recentes</h2>
+    <div class="row">
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <img class="card-img-top" src="the-witcher.jpg" alt="Série Recente 1">
+          <div class="card-body">
+            <h5 class="card-title">The Witcher</h5>
+            <p class="card-text">Um caçador de monstros enfrenta perigos e descobre segredos em um mundo repleto de magia e traição.</p>
+            <a href="serie.html" class="btn btn-primary">Ver Detalhes</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <img class="card-img-top" src="La casa de papel.jpg" alt="Série Recente 2">
+          <div class="card-body">
+            <h5 class="card-title">La Casa De Papel</h5>
+            <p class="card-text">Um grupo de ladrões tenta realizar o maior roubo da história, enquanto lidam com a polícia e seus próprios conflitos.</p>
+            <a href="serie.html" class="btn btn-primary">Ver Detalhes</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <img class="card-img-top" src="The-Mandalorian-personagens-11.jpeg" alt="Série Recente 3">
+          <div class="card-body">
+            <h5 class="card-title">The Mandalorian</h5>
+            <p class="card-text">Um caçador de recompensas navega pela galáxia após a queda do Império, protegendo uma misteriosa criança.</p>
+            <a href="serie.html" class="btn btn-primary">Ver Detalhes</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção 3: Informações do Aluno -->
+  <section class="container mt-5">
+    <h2>Sobre o Desenvolvedor</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <p style="font-size: 0.9rem;">Este site foi desenvolvido por Lucca Sander, estudante de desenvolvimento web, como parte de um projeto acadêmico. O objetivo deste projeto é criar uma interface responsiva e estática utilizando apenas HTML e CSS, sem o uso de JavaScript.</p>
+        </div>
+        <div class="col-md-6">
+            <div class="card" style="border: none;">
+                <div class="card-body">
+                    <div class="d-flex align-items-start">
+                        <div class="ml-3" style="text-align: right;">
+                            <h5 style="margin-bottom: 0;">Informações do Aluno</h5>
+                            <p style="margin: 0;"><strong>Aluno:</strong> Lucca Sander</p>
+                            <p style="margin: 0;"><strong>Curso:</strong> Ciência da computação</p>
+                            <p style="margin: 0;"><strong>Turma:</strong> Turma Manhã</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="border-top: 2px solid rgb(23, 138, 173); margin-top: 20px;"></div> <!-- Linha preta retangular -->
+</section>
+
+  <!-- Seção 4: Cards de Séries Favoritas -->
+  <section class="container mt-5">
+    <h2>Minhas Séries Favoritas</h2>
+    <div class="row">
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <img class="card-img-top" src="game-of-thrones.webp" alt="Favorita 1">
+          <div class="card-body">
+            <h5 class="card-title">Game of Thrones</h5>
+            <p class="card-text">Nobres famílias lutam pelo controle do Trono de Ferro em um mundo de fantasia cheio de intrigas e traições.</p>
+            <a href="serie.html" class="btn btn-primary">Ver Detalhes</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <img class="card-img-top" src="The-Office-Star-Plus.jpg" alt="Favorita 2">
+          <div class="card-body">
+            <h5 class="card-title">The Office</h5>
+            <p class="card-text">Uma comédia de situação que retrata o cotidiano dos funcionários de uma empresa de papel em Scranton, PA.</p>
+            <a href="serie.html" class="btn btn-primary">Ver Detalhes</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <img class="card-img-top" src="youu.jpg" alt="Favorita 3">
+          <div class="card-body">
+            <h5 class="card-title">You</h5>
+            <p class="card-text">You é um thriller onde Joe, um perseguidor obsessivo, usa seu charme e tecnologia para manipular e controlar suas vítimas.</p>
+            <a href="serie.html" class="btn btn-primary">Ver Detalhes</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scripts do Bootstrap e jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

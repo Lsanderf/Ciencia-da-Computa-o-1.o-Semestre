@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes da Série - Dragon Ball Super</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .navbar {
+            padding: 10px;
+            background-color: #0c8992; /* Cor da navbar */
+            color: white;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .navbar .explorar-link {
+            position: absolute;
+            right: 20px;
+        }
+        .container {
+            margin-top: 30px;
+        }
+        .section-title {
+            margin-top: 40px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+            color: #0c8992; /* Cor da seção */
+        }
+        .series-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .series-info img {
+            width: 250px; /* Ajustando a largura da imagem */
+            height: auto;
+            border-radius: 10px; /* Bordas arredondadas */
+        }
+        .cast-card {
+            margin-bottom: 20px; /* Espaçamento entre os cards */
+        }
+        .cast-card img {
+            width: 100%; /* Imagem ocupa 100% do card */
+            height: 300px; /* Altura maior para as imagens */
+            object-fit: cover; /* Corta a imagem para preencher o espaço */
+            border-radius: 10px 10px 0 0; /* Bordas arredondadas no topo */
+        }
+        .accordion-item {
+            border: 1px solid #0c8992; /* Borda da seção de temporadas */
+            border-radius: 5px; /* Bordas arredondadas */
+        }
+        .accordion-button {
+            background-color: #0c8992; /* Cor do botão */
+            color: white; /* Cor do texto do botão */
+        }
+        .accordion-button:not(.collapsed) {
+            background-color: #0a7075; /* Cor do botão quando ativo */
+            color: white; /* Cor do texto do botão ativo */
+        }
+        .season-img {
+            width: 100%; /* Imagem ocupa 100% do espaço disponível */
+            height: auto; /* Altura automática */
+            border-radius: 5px; /* Bordas arredondadas */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html">PucFlix</a>
+        <a href="explorar.html" class="explorar-link">Explorar</a>
+    </nav>
+
+    <!-- Container Principal -->
+    <div class="container">
+
+        <!-- Visão Geral da Série -->
+        <h2 class="section-title">Visão Geral</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="Dragon ball 2.jpg" alt="Dragon Ball Super" class="img-fluid" style="border-radius: 10px; margin-bottom: 20px;">
+            </div>
+            <div class="col-md-6">
+                <p>
+                    Dragon Ball Super continua as aventuras de Goku e seus amigos, após a derrota de Majin Boo. A série explora novos universos, deuses da destruição e lutas épicas que testam os limites do poder de Goku e Vegeta.
+                </p>
+                <h5>Plataforma para Assistir:</h5>
+                <p><strong>Disponível em:</strong> Crunchyroll</p>
+                <h5>Detalhes Gerais:</h5>
+                <ul>
+                    <li><strong>Gênero:</strong> Ação, Aventura, Fantasia</li>
+                    <li><strong>Duração:</strong> 5 Temporadas</li>
+                    <li><strong>Ano de Lançamento:</strong> 2015</li>
+                    <li><strong>Avaliação:</strong> 9.0/10</li>
+                </ul>
+                <!-- Botão Adicionado -->
+                <a href="#" class="btn btn-primary mt-3">Incluir em Minhas Séries</a>
+            </div>
+        </div>
+
+        <!-- Seção Curiosidades -->
+        <h2 class="section-title">Curiosidades</h2>
+        <ul>
+            <li><strong>Curiosidade 1:</strong> Dragon Ball Super é a primeira série da franquia a ser produzida após a série Dragon Ball Z.</li>
+            <li><strong>Curiosidade 2:</strong> A série apresenta novos personagens e deuses, expandindo ainda mais o universo de Dragon Ball.</li>
+            <li><strong>Curiosidade 3:</strong> O autor original, Akira Toriyama, teve um papel ativo na criação da história e dos personagens da série.</li>
+            <li><strong>Curiosidade 4:</strong> O Torneio do Poder é um dos arcos mais aclamados da série, reunindo lutadores de diferentes universos.</li>
+        </ul>
+
+        <!-- Seção Elenco -->
+        <h2 class="section-title">Elenco</h2>
+        <div class="row">
+            <div class="col-md-4 cast-card">
+                <div class="card">
+                    <img src="wendel bezerra.jpeg" class="card-img-top" alt="Goku">
+                    <div class="card-body">
+                        <h5 class="card-title">Goku</h5>
+                        <p class="card-text">Wendel Bezerra</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 cast-card">
+                <div class="card">
+                    <img src="alfredo rollo.webp" class="card-img-top" alt="Vegeta">
+                    <div class="card-body">
+                        <h5 class="card-title">Vegeta</h5>
+                        <p class="card-text">Alfredo Rollo</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 cast-card">
+                <div class="card">
+                    <img src="Tãnia Gaidarji.webp" class="card-img-top" alt="Bulma">
+                    <div class="card-body">
+                        <h5 class="card-title">Bulma</h5>
+                        <p class="card-text">Tãnia Gaidarji</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 cast-card">
+                <div class="card">
+                    <img src="Luiz Antônio Lobue.webp" class="card-img-top" alt="Piccolo">
+                    <div class="card-body">
+                        <h5 class="card-title">Piccolo</h5>
+                        <p class="card-text">Luiz Antônio Lobue</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 cast-card">
+                <div class="card">
+                    <img src="CarlosCampanille.webp" class="card-img-top" alt="Freeza">
+                    <div class="card-body">
+                        <h5 class="card-title">Freeza</h5>
+                        <p class="card-text">Carlos Campanile</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 cast-card">
+                <div class="card">
+                    <img src="Sérgio Cantú.jpeg" class="card-img-top" alt="Gohan">
+                    <div class="card-body">
+                        <h5 class="card-title">Gohan</h5>
+                        <p class="card-text">Sérgio Cantú</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção Temporadas e Episódios -->
+        <h2 class="section-title">Temporadas e Episódios</h2>
+        <div class="accordion" id="temporadasAccordion">
+            <!-- Temporada 1 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="temporada1">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                        Temporada 1
+                    </button>
+                </h2>
+                <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="temporada1" data-bs-parent="#temporadasAccordion">
+                    <div class="accordion-body">
+                        <img src="temporada 1.jpg" alt="Temporada 1" class="season-img">
+                        <p>Na primeira temporada, Goku e Vegeta enfrentam Beerus, o Deus da Destruição, que chega à Terra em busca de um guerreiro digno.</p>
+                        <ul>
+                            <li>Episódio 1: O Retorno de Goku</li>
+                            <li>Episódio 2: A Batalha contra Beerus</li>
+                            <li>Episódio 3: O Torneio dos Poderes</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Temporada 2 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="temporada2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                        Temporada 2
+                    </button>
+                </h2>
+                <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="temporada2" data-bs-parent="#temporadasAccordion">
+                    <div class="accordion-body">
+                        <img src="temporada2.jpg" alt="Temporada 2" class="season-img">
+                        <p>A segunda temporada apresenta novos inimigos e a luta contra Freeza, que retorna em busca de vingança.</p>
+                        <ul>
+                            <li>Episódio 1: A Chegada do Turista</li>
+                            <li>Episódio 2: O Plano de Freeza</li>
+                            <li>Episódio 3: A Última Esperança</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Adicione mais temporadas conforme necessário -->
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
