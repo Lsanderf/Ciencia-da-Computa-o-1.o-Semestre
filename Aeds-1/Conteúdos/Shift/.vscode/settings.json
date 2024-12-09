@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "shift_esquerda": "cpp",
+        "stdio.h": "c",
+        "funções.h": "c"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
+}
